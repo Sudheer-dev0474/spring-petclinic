@@ -1,4 +1,4 @@
-FROM maven:3.9.16-eclipse-temurin-11-alpine AS build
+FROM maven:33.9.11-eclipse-temurin-25 AS build
 WORKDIR /app
 COPY . .
 RUN mvn package
