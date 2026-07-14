@@ -19,6 +19,11 @@ jobs:
         with:
           java-version: '17'
           distribution: 'tumerin'
-          
+
       - name: build project
         run: mvn clean package
+
+      - name: build image
+        run: docker image build -t myrepo/app:latest .
+
+      
